@@ -15,4 +15,6 @@ def poisson_pmf(k, lam):
 
 
 def geometric_pmf(n, p):
-    pass
+    if n < 1 or not (0 < p <= 1):
+        return 0
+    return ((1 - p) ** (n - 1)) * p
