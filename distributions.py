@@ -11,7 +11,7 @@ def binomial_pmf(n, p, k):
 def poisson_pmf(k, lam):
     if k < 0:
         return 0
-    return (math.exp(-lambd) * (lambd ** k)) / math.factorial(k)
+    return (math.exp(-lam) * (lam ** k)) / math.factorial(k)
 
 
 def geometric_pmf(n, p):
